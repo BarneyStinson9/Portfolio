@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 0; /* Ensure no default margin */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.skills {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-sizing: border-box; /* Ensure the box model includes padding and border */
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+    margin: 0 0 20px 0; /* Add margin for spacing */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Remove default margin */
+}
+
+li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+/* Existing Media Query */
+@media (max-width: 600px) {
+    .skills {
+        padding: 10px;
+    }
+}
+
+/* Additional Media Queries for better responsiveness */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .skills {
+        margin: 10px auto;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.5em; /* Slightly smaller font size for smaller screens */
+    }
+
+    li {
+        padding: 8px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 5px;
+    }
+
+    .skills {
+        margin: 5px auto;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.2em; /* Smaller font size for extra small screens */
+    }
+
+    li {
+        padding: 6px 0;
+    }
+}
+
+@media (max-width: 320px) {
+    h2 {
+        font-size: 1em; /* Even smaller font size for very small screens */
+    }
+
+    li {
+        padding: 5px 0;
+    }
+}

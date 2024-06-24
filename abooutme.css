@@ -1,0 +1,141 @@
+/* Apply box-sizing to all elements */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: url('grey.jpg') no-repeat center center fixed; /* Background image */
+    background-size: cover; /* Cover the entire viewport */
+    padding: 20px;
+    margin: 0;
+}
+
+.about {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+h3 {
+    font-size: 1.8em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+strong {
+    color: #333;
+}
+
+h4 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #333;
+    border-bottom: 2px solid #4CAF50; /* Underline with a green border */
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li p {
+    margin: 5px 0 0 20px; 
+}
+
+button {
+    text-align: center;
+}
+
+/* Media Queries for different screen sizes */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .about {
+        padding: 15px;
+    }
+
+    h3 {
+        font-size: 1.5em; /* Slightly smaller font size for smaller screens */
+    }
+
+    h4 {
+        font-size: 1.3em; /* Slightly smaller font size for smaller screens */
+    }
+
+    p {
+        margin-bottom: 8px;
+    }
+
+    ul li p {
+        margin: 5px 0 0 15px; 
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 5px;
+    }
+
+    .about {
+        padding: 10px;
+    }
+
+    h3 {
+        font-size: 1.2em; /* Smaller font size for extra small screens */
+    }
+
+    h4 {
+        font-size: 1.2em; /* Smaller font size for extra small screens */
+    }
+
+    p {
+        margin-bottom: 6px;
+    }
+
+    ul li p {
+        margin: 3px 0 0 10px; 
+    }
+}
+
+@media (max-width: 320px) {
+    .about {
+        padding: 8px;
+    }
+
+    h3 {
+        font-size: 1em; /* Even smaller font size for very small screens */
+    }
+
+    h4 {
+        font-size: 1em; /* Even smaller font size for very small screens */
+    }
+
+    p {
+        margin-bottom: 5px;
+    }
+
+    ul li p {
+        margin: 3px 0 0 8px; 
+    }
+}

@@ -1,0 +1,114 @@
+/* Apply box-sizing to all elements */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: url('grey.jpg') no-repeat center center fixed; /* Background image */
+    background-size: cover; /* Cover the entire viewport */
+    padding: 20px;
+}
+
+.projects {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 90%;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+h2 {
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+ol {
+    list-style: decimal inside;
+    padding-left: 0;
+}
+
+ol li {
+    margin-bottom: 20px;
+}
+
+ol li strong {
+    display: block;
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+p {
+    margin-top: 5px;
+    color: #555;
+    margin-left: 20px; /* Indent the paragraph within the list item */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.5em;
+    }
+
+    ol li strong {
+        font-size: 1.1em;
+    }
+
+    .projects {
+        padding: 15px;
+    }
+
+    p {
+        margin-left: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    ol li strong {
+        font-size: 1em;
+    }
+
+    .projects {
+        padding: 10px;
+    }
+
+    p {
+        margin-left: 10px;
+    }
+}
+@media (max-width: 320px) {
+    body {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    ol li strong {
+        font-size: 1em;
+    }
+
+    .projects {
+        padding: 10px;
+    }
+
+    p {
+        margin-left: 10px;
+    }
+}

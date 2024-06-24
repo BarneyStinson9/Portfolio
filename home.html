@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>PORTFOLIO</h1>
+    <nav>
+    
+    <a tabindex="0" id="aboutme" title="aboutme" aria-label="aboutme" title="aboutme" href="aboutme.html" >About me</a>
+    <a tabindex="0" id="pro" title="projects" aria-label="projects" title="projects" href="projects.html">Projects</a>
+    <a tabindex="0" id="skills" title="skills" aria-label="skills" title="skills" href="skills.html">Skills</a>
+    <a tabindex="0" id="con" title="contact" aria-label="contact" title="contact" href="contact.html">contact</a>
+    
+    </nav>
+   
+    <br>
+    <br>
+    <div>
+    <img tabindex="4" id="img" title="image" aria-label="image" role="image" src="images.jpg" alt="photo of me">
+    <h3>SHEENA J</h3>
+    </div>
+    <script>
+        window.onload = function() {
+            // Focus on the first link on the page
+            var firstLink = document.querySelector('a');
+            if (firstLink) {
+                firstLink.focus();
+            }
+        };
+    </script>
+    
+</body>
+</html>

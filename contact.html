@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <section class="contact">
+    <h2>Contact Me</h2>
+    <p><b>Phone:<a href="tel:+91 7593055805">+91 7593055805</a></b></p>
+    <p><b>Mailto: <a href="mailto:sheenajmarian@gmail.com">sheenajmarian</a></b></p>
+    </section>
+    <br>
+    <section class="contact">
+        <form>
+            <label for="fname">First name:</label>
+            <input title="firstname" aria-label="firstname" type="text" id="fname" role="textbox"  required><br>
+            <label for="lname">Last name:</label>
+            <input title="lastname" aria-label="lastname" type="text" id="lname" role="textbox" ><br>
+            <label for="mail">Email</label>
+            <input title="mail" aria-label="email" type="email" id="mail" role="textbox" ><br>
+            <button id="button" role="alert" title="submit button" aria-label="submit button" onclick="pop()">submit</button>
+        </form>
+    </section>
+    <script>
+        function pop()
+        {
+            let fname = document.getElementById("fname").value;
+            let lname= document.getElementById("lname").value;
+            let mail= document.getElementById("mail").value;
+            if(fname == '' || lname == '' || mail == ''){
+                alert("fill all boxes")
+            }
+            else{
+            alert("Firstname:"+ fname + "\nLastname:" +lname + "\nEmail:" +mail);
+            }
+        }
+    </script>
+</body>
+</html>
